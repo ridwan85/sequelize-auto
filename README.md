@@ -1,3 +1,9 @@
+**_THIS IS NOT THE OFFICIAL SEQUELIZE-AUTO REPO_**  
+**_IM USING THIS REPO FOR MY PROJECT, IT MIGHT NOT APPLIED TO YOUR PROJECT_**  
+**_PLEASE USE THE ACTUAL SEQUELIZE-AUTO REPO _**
+
+---
+
 # Sequelize-Auto
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/sequelize/sequelize-auto.svg)](https://greenkeeper.io/)
@@ -114,7 +120,6 @@ Produces a file/files such as ./models/Users.js which looks like:
       });
     };
 
-
 Which makes it easy for you to simply [Sequelize.import](http://docs.sequelizejs.com/en/latest/docs/models-definition/#import) it.
 
 ## Configuration options
@@ -157,13 +162,13 @@ Add -z to cli options or `typescript: true` to programmatic options. Model usage
 
 ```js
 // All models, can put in or extend to a db object at server init
-import * as dbTables from './models/db.tables';
+import * as dbTables from "./models/db.tables";
 const tables = dbTables.getModels(sequelize); //:dbTables.ITable
-tables.Device.findAll
+tables.Device.findAll;
 // Single models
-import * as dbDef from './models/db.d';
-const devices:dbDef.DeviceModel = sequelize.import('./models/Device');
-devices.findAll
+import * as dbDef from "./models/db.d";
+const devices: dbDef.DeviceModel = sequelize.import("./models/Device");
+devices.findAll;
 ```
 
 ## Testing
@@ -187,4 +192,4 @@ You must setup a database called `sequelize_auto_test` first, edit the `test/con
 
 ## Projects Using Sequelize-Auto
 
-* [Sequelizer](https://github.com/andyforever/sequelizer)
+- [Sequelizer](https://github.com/andyforever/sequelizer)
